@@ -5,23 +5,23 @@ It also covers how to access the CodeAssist web UI from your local machine (WSL)
 
 ---
 
-## 🚀 Steps to Setup
+##  Steps to Setup
 
-### **Step 1 — Clone the Repository**
+### **Step 1  Clone the Repository**
 ```bash
 git clone https://github.com/gensyn-ai/codeassist
 ```
 
 ---
 
-### **Step 2 — Install UV (Astral Runtime)**
+### **Step 2  Install UV (Astral Runtime)**
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 ---
 
-### **Step 3 — Reload Your Shell**
+### **Step 3  Reload Your Shell**
 ```bash
 source ~/.bashrc
 ```
@@ -29,14 +29,14 @@ source ~/.bashrc
 
 ---
 
-### **Step 4 — Enter the Project Directory**
+### **Step 4  Enter the Project Directory**
 ```bash
 cd codeassist
 ```
 
 ---
 
-### **Step 5 — Change Ports (For VPS Users Running Both Gensyn Node & CodeAssist)**
+### **Step 5  Change Ports (For VPS Users Running Both Gensyn Node & CodeAssist)**
 
 If your VPS already has a **Gensyn Node** running on port `3000`, you need to change CodeAssist’s external port to avoid conflicts.
 
@@ -82,7 +82,7 @@ Save and exit.
 
 ---
 
-### **Step 6 — Run the Application**
+### **Step 6 Run the Application**
 ```bash
 uv run run.py
 ```
@@ -93,7 +93,7 @@ When prompted for your **Hugging Face token**:
 
 ---
 
-### **Step 7 — Forward Ports from VPS to Your Local Machine (WSL)**
+### **Step 7  Forward Ports from VPS to Your Local Machine (WSL)**
 
 Since you can’t directly open `localhost` on the VPS, forward the required ports to your local machine.
 
@@ -114,11 +114,11 @@ If your VPS is linked with a public SSH key, it may simply ask for confirmation 
 
 ---
 
-### **🔑 Alternative Method — Setup SSH Key Authentication (Recommended)**
+### **Alternative Method — Setup SSH Key Authentication (Recommended)**
 
 If you want to avoid entering your VPS password each time or enable SSH forwarding securely, follow these steps to set up an SSH key:
 
-#### **Step 1 — Generate an SSH key on your local machine (WSL)**
+#### **Step 1  Generate an SSH key on your local machine (WSL)**
 ```bash
 ssh-keygen -t ed25519 -C "batman"
 ```
@@ -128,16 +128,16 @@ ssh-keygen -t ed25519 -C "batman"
 
 ---
 
-#### **Step 2 — Display your public key**
+#### **Step 2 Display your public key**
 ```bash
 cat ~/.ssh/id_ed25519.pub
 ```
 
-Copy the entire output — this is your **public SSH key**.
+Copy the entire output  this is your **public SSH key**.
 
 ---
 
-#### **Step 3 — Add your SSH key to the VPS**
+#### **Step 3 Add your SSH key to the VPS**
 
 Now, you need to paste this key into your VPS so it recognizes your local machine.
 
@@ -161,7 +161,7 @@ Ctrl + O → Enter → Ctrl + X
 
 ---
 
-#### **Step 4 — Now connect using your SSH key**
+#### **Step 4  Now connect using your SSH key**
 Once your key is added to the VPS, use the same SSH forwarding command:
 
 ```bash
@@ -176,7 +176,7 @@ Now it will connect automatically (no password needed).
 
 ---
 
-### **Step 8 — Access CodeAssist in Your Browser**
+### **Step 8  Access CodeAssist in Your Browser**
 
 Once the tunnel is active, open this in your local browser:
 
@@ -184,12 +184,12 @@ Once the tunnel is active, open this in your local browser:
 http://localhost:3001
 ```
 
-A link will also appear in the terminal — click it.  
+A link will also appear in the terminal  click it.  
 Log in with your email when prompted, and you’re ready to use CodeAssist!
 
 ---
 
-## ✅ Example Summary
+##  Example Summary
 
 **Final `compose.yml` snippet:**
 ```yaml
@@ -209,13 +209,13 @@ ssh -L 3001:localhost:3001 -L 8000:localhost:8000 -L 8001:localhost:8001 -L 8008
 
 ---
 
-## 🧠 Notes & Tips
+##  Notes & Tips
 
-- When pasting the Hugging Face token, it will not appear — that’s normal.
+- When pasting the Hugging Face token, it will not appear  that’s normal.
 - Keep the SSH terminal open while using CodeAssist (the tunnel closes if you close it).
 - If port `3001` is already in use, choose another (e.g., `3002`) and update both files.
 - Local users (non-VPS): skip SSH forwarding and open `http://localhost:3000` directly.
-- For safety, do **not** expose CodeAssist ports publicly — use SSH tunneling.
+- For safety, do **not** expose CodeAssist ports publicly use SSH tunneling.
 - Using SSH keys saves time and increases security for future connections.
 
 ---
