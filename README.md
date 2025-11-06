@@ -57,7 +57,7 @@ ports:
   - "3001:3000"
 ```
 
-Save and exit (`Ctrl + O`, `Enter`, `Ctrl + X`).
+Save and exit (`Ctrl + X`, `press y and Enter`, ).
 
 ---
 
@@ -151,7 +151,7 @@ nano ~/.ssh/authorized_keys
 Paste your copied key inside this file.  
 To save it:
 ```
-Ctrl + O → Enter → Ctrl + X
+Ctrl + X → Y and Enter 
 ```
 
 ---
