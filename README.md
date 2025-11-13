@@ -73,23 +73,10 @@ Save and exit (`Ctrl + X`, `press y and Enter`, ).
 ---
 
 #### **Edit the `run.py` File**
-```bash
+
+```
 nano run.py
 ```
-
-Scroll until you find where the **web UI port** is defined.  
-Change the port from `3000` → `3001`.
-
-Example:
-```python
-# before
-uv.run("app:app", host="0.0.0.0", port=3000)
-
-# after
-uv.run("app:app", host="0.0.0.0", port=3001)
-```
-
----
 
 **after last update both rl-swarm and code assits using the ollama and it running on same port so some faced to run this two node on vps**
 
@@ -161,7 +148,7 @@ source ~/.bashrc
 
 then
 
-uv run run.py
+uv run run.py --port 3001
 
 ```
 
