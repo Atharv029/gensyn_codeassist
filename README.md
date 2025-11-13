@@ -56,6 +56,21 @@ Change it to:
 ports:
   - "3001:3000"
 ```
+---
+
+after last update both rl-swarm and code assits using the ollama and it running on same port so some faced to run this two node on vps
+so chnage this port number also to 11500 
+
+<img width="684" height="350" alt="image" src="https://github.com/user-attachments/assets/09a0c053-0502-427f-81a6-b6d15ddc30e9" />
+
+like this 
+
+<img width="737" height="251" alt="image" src="https://github.com/user-attachments/assets/e63fec9d-eee3-44b0-b918-b19daf9befc1" />
+
+same changes here 
+
+<img width="1484" height="304" alt="image" src="https://github.com/user-attachments/assets/804ca27b-8bf7-42db-95a8-09dbded3f070" />
+
 
 Save and exit (`Ctrl + X`, `press y and Enter`, ).
 
@@ -81,14 +96,15 @@ uv.run("app:app", host="0.0.0.0", port=3001)
 after last update both rl-swarm and code assits using the ollama and it running on same port so some faced to run this two node on vps 
 so here is the solution chnage the port for ollama also in run.py 
 
-you will see red comment like this 
+you will see red comment like this and there will be port number 11434 so change that port number to 11500  
 
-<img width="1036" height="402" alt="image" src="https://github.com/user-attachments/assets/ff30bb0a-46a3-4d1c-b2e0-9b97073f4136" />
-
-change this port number to 11500 
 
 <img width="1036" height="402" alt="image" src="https://github.com/user-attachments/assets/a0f8331a-8317-4841-a4c4-46d8dcfa75a1" />
 
+
+after this scroll down more and you will see this same here change port number to 11500
+
+<img width="1205" height="301" alt="image" src="https://github.com/user-attachments/assets/8fef012a-9dea-4acd-97de-789f49ed180f" />
 
 Save and exit.
 
