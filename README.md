@@ -108,6 +108,18 @@ after this scroll down more and you will see this same here change port number t
 <img width="1205" height="301" alt="image" src="https://github.com/user-attachments/assets/8fef012a-9dea-4acd-97de-789f49ed180f" />
 
 
+```
+
+# Changed from:
+if not requests.get("http://localhost:11435").ok:
+    raise Exception("Ollama API is not reachable at http://localhost:11435")
+
+# To:
+if not requests.get("http://localhost:11500").ok:
+    raise Exception("Ollama API is not reachable at http://localhost:11500")
+
+```
+    
 Save and exit.
 
 ---
