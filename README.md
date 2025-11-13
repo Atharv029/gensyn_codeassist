@@ -89,7 +89,10 @@ uv.run("app:app", host="0.0.0.0", port=3000)
 uv.run("app:app", host="0.0.0.0", port=3001)
 ```
 
-after last update both rl-swarm and code assits using the ollama and it running on same port so some faced to run this two node on vps 
+---
+
+**after last update both rl-swarm and code assits using the ollama and it running on same port so some faced to run this two node on vps**
+
 so here is the solution chnage the port for ollama also in run.py 
 
 you will see red comment like this and there will be port number 11434 so change that port number to 11500  
@@ -106,6 +109,25 @@ after this scroll down more and you will see this same here change port number t
 
 
 Save and exit.
+
+then 
+
+```
+cd web-ui/src/simulation/simulators && nano OllamaCodeSimulator.ts
+
+```
+
+scroll down and do change here 
+
+<img width="1166" height="255" alt="image" src="https://github.com/user-attachments/assets/21e649e3-9824-4540-94ad-7d43563c8029" />
+
+Save and exit (`Ctrl + X`, `press y and Enter`, )
+
+go to codeassist directory 
+```
+cd ~/codeassist
+```
+
 
 ---
 
