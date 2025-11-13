@@ -56,13 +56,14 @@ Change it to:
 ports:
   - "3001:3000"
 ```
----
+<br>
 
 after last update both rl-swarm and code assits using the ollama and it running on same port so some faced to run this two node on vps
 so chnage this port number also to 11500 
 
 <img width="684" height="350" alt="image" src="https://github.com/user-attachments/assets/09a0c053-0502-427f-81a6-b6d15ddc30e9" />
 
+<br>
 like this 
 
 <img width="746" height="368" alt="image" src="https://github.com/user-attachments/assets/24f2ad98-fb89-477b-a366-127e41f5758f" />
@@ -87,8 +88,7 @@ you will see red comment like this and there will be port number 11434 so change
 
 <img width="1149" height="392" alt="image" src="https://github.com/user-attachments/assets/03f1bdc0-8386-4d45-bbcb-0c15b92e6434" />
 
----
-
+<br>
 after this scroll down more and you will see this same here change port number to 11500
 
 
