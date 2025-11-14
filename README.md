@@ -97,7 +97,7 @@ change this to
  ports={
             "3000/tcp": 3001,  # Expose Web UI port
         },
-
+```
 
 **after last update both rl-swarm and code assits using the ollama and it running on same port so some faced to run this two node on vps**
 
