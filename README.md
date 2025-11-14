@@ -85,9 +85,12 @@ spot this
 <img width="759" height="463" alt="image" src="https://github.com/user-attachments/assets/d0a2d5aa-c4a2-404c-bdfa-e02f0102cc87" />
 
 
-it will be like 
 
 ```
+
+
+it will be like
+
  ports={
             "3000/tcp": 3000,  # Expose Web UI port
         },
@@ -98,6 +101,8 @@ change this to
             "3000/tcp": 3001,  # Expose Web UI port
         },
 ```
+
+<br>
 
 **after last update both rl-swarm and code assits using the ollama and it running on same port so some faced to run this two node on vps**
 
