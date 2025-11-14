@@ -78,6 +78,26 @@ Save and exit (`Ctrl + X`, `press y and Enter`, ).
 ```
 nano run.py
 ```
+**If you running both node in same vps then its for you**
+
+spot this 
+
+<img width="759" height="463" alt="image" src="https://github.com/user-attachments/assets/d0a2d5aa-c4a2-404c-bdfa-e02f0102cc87" />
+
+
+it will be like 
+
+```
+ ports={
+            "3000/tcp": 3000,  # Expose Web UI port
+        },
+
+change this to
+
+ ports={
+            "3000/tcp": 3001,  # Expose Web UI port
+        },
+
 
 **after last update both rl-swarm and code assits using the ollama and it running on same port so some faced to run this two node on vps**
 
@@ -151,7 +171,7 @@ source ~/.bashrc
 then
 
 ```
-uv run run.py --port 3001
+uv run run.py 
 ```
 
 
